@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Han Cloud的博客</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="/stylesheets/index.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="avatar">
+            <img src="/images/avatar.png">
+        </div>
+        <ul class="navList">
+            <li class="nav_actived">首页</li>
+            <li>我</li>
+        </ul>
+    </div>
+    <div class="item_banner">
+
+        <% essays.forEach((essays) =>{%>
+            <div class="item">
+                <div class="item_title">
+                    <%=essays.title%>
+                </div>
+                <div class="item_brief">
+                    <%=essays.brief%>
+                </div>
+                <div class="item_time"><span class="time"><%=essays.time%></span>
+                    <ul class="tagList">
+                        <li class="orange">Javascript</span>
+                        </li>
+                        <li class="red">Angular</li>
+                        <li class="green">Vue</li>
+                        <li class="gray_blue">NodeJs</li>
+                        <li class="blue">Atom</li>
+                </div>
+            </div>
+            <% }) %>
+    </div>
+    <div class="bottom">HanCloud's Blog 皖ICP备16025729号-1</div>
+    <script src="/javascripts/function/index.js"></script>
+</body>
+
+</html>

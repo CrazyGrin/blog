@@ -1,0 +1,8 @@
+{
+    "name": "my-blog",
+    "version": "0.0.1",
+    "author": "Ella",
+    "dependencies":{
+        "express": "4.x"
+    }
+}
