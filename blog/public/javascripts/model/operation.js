@@ -1,17 +1,10 @@
-function Essay({
-    title = "title",
-    brief = "brief",
-    time = "tiem",
-    content = "content"
-} = {}) {
-    this.title = title;
-    this.brief = brief;
-    this.time = time;
-    this.content = content;
+function Operation({operation, data} = {}) {
+    this.operation = operation;
+    this.data = data;
 }
 
-Essay.prototype = {
-    construct: Essay,
+Operation.prototype = {
+    construct: Operation,
     toString: function() {
         return JSON.stringify(this);
     },
@@ -34,5 +27,14 @@ Essay.prototype = {
         }
     }
 }
+// let data = {
+//     "operation": "add",
+//     "data": {
+//         "emm": 0,
+//         "emmm": 1
+//     }
+// }
+// let demo = new Operation(data);
+// console.log(demo);
 
-module.exports = Essay;
+module.exports = Operation;

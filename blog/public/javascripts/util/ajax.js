@@ -1,4 +1,4 @@
-letfunction Ajax(obj) {
+function Ajax(obj) {
     this.method = obj.method || '';
     this.url = obj.url || '';
     this.callback = obj.callback || '';
